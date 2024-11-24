@@ -2,7 +2,9 @@ from setuptools import setup,find_packages
 from typing import List
 
 HYPHEN_E_DOT='-e .'
-
+'''
+The function to return the list of requirements.
+'''
 def get_requirements(file_path:str)->List[str]:
     requirements=[]
 
@@ -14,11 +16,5 @@ def get_requirements(file_path:str)->List[str]:
 
 
     return requirements
-setup(
-    name='mlprojects',
-    description='Base ML Project to set up pipeline',
-    author='Peonie',
-    packages=find_packages(),
-    install_requires=get_requirements(file_path='requirements.txt')
-)
 
+setup(name="ML Projects")
